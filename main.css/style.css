@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440;
+    min-height: 100vh; 
+    background-color: hsl(233, 47%, 7%);
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+} 
+    
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+    border-radius: .7rem;
+    overflow: hidden;
+    
+}
+section {
+    background-color:  hsl(244, 38%, 16%);
+    max-width: 500px;
+    min-height: 400px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+
+}
+.header {
+    font-size: 2.2rem;
+}
+
+.insights {
+    color: hsl(277, 64%, 61%);
+}
+.bottom {
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    display: inline-flex;
+}
+
+.paragraph {
+    margin-top: 2rem;
+    opacity: .6;
+    font-size: 1rem;
+    line-height: 25px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+ 
+.companies {
+   margin-right: 3rem;
+   font-size: 2rem;
+   font-weight: 400px;
+}
+.companies p {
+    font-size: .8rem;
+    opacity: .3;
+}
+.templates {
+    margin-right: 3rem;
+    font-size: 2rem;
+    
+}
+.templates p {
+    font-size: .8rem;
+    opacity: .3;
+}
+.queries {
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+.queries p {
+    font-size: .8rem;
+    opacity: .3;
+}
+
+ .image-content {
+    background: url(/images/image-header-desktop.jpg);
+    display: block;
+    width: 100%; 
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: hsla(277, 64%, 61%, .5);
+    
+} 
+
+
+.picture {
+    background-color: hsla(277, 64%, 61%, 0.6);
+    width: 450px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+
+
+ @media only screen and (max-width: 375px) {
+      
+    .wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 335px;
+        height: auto;
+        margin-left: .5rem;
+        margin-right: .5rem;
+        margin-top: 5rem;
+        
+        }
+        .header {
+            text-align: center;
+        }
+        
+
+    .image-content {
+        
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        background-color: hsla(277, 64%, 61%, 0.5);
+        
+        
+        
+    }
+    
+
+   
+    .picture {
+        background-color:hsla(277, 64%, 61%, 0.5);
+        height: 280px;
+    }
+
+    
+    section {
+        padding: .5rem;
+        
+    }
+    .top {
+        
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    .header {
+        text-align: center;
+    }
+    .paragraph {
+        text-align: center;
+        font-size: 17px;
+    }
+    .bottom {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-right: 50%;
+        margin-left: 40%;
+
+    }
+    .bottom p {
+        margin-bottom: 2rem;
+    }
+} 
+    
